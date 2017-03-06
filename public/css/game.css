@@ -1,0 +1,248 @@
+﻿div.boardRow 
+{
+    position: absolute; 
+    width: 798px;
+    height: 162px;
+    overflow: hidden;
+}
+
+div.winnerRow 
+{
+    background: url(../images/table_highlight.gif) no-repeat left top;
+}
+
+#dealerContainer 
+{
+    left: 32px;
+    top: 51px;
+}
+
+#playerContainer 
+{
+    left: 32px;
+    top: 256px;
+}
+
+div.card 
+{
+    position: absolute;
+    background: url(../images/cards.png) no-repeat left top;
+    width: 72px;
+    height: 96px;
+    overflow: hidden;
+}
+
+div.blank 
+{
+    background: url(../images/back.png) no-repeat left top;
+}
+
+
+div.score 
+{
+    position: absolute;
+    left: 632px;
+    top: 0px;
+    color: White;
+    font-size: 80px;
+    width: 126px;
+    height: 98px;
+    text-align: center; 
+    padding: 32px 20px;
+}
+
+div.score span 
+{
+    display: block;
+    font-size: 40px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+div.score span+span 
+{
+    text-align: right;
+}
+
+div.twoscores 
+{
+    background: url(../images/divider.png) no-repeat 32px 30px;
+}
+
+div.bust 
+{
+    font-size: 60px;
+    color: Red;
+    padding-top: 48px;
+}
+
+div.twistbutton 
+{
+    position: absolute;
+    left: 310px;
+    top: 424px;
+}
+
+div.stickbutton 
+{
+    position: absolute;
+    left: 485px;
+    top: 424px;
+}
+
+div.button 
+{
+    width: 161px;
+    height: 49px;
+    background: url(../images/button.png) no-repeat left top;
+    text-align: center;
+    font-size: 30px;
+    color: #2a4836;
+    cursor: pointer;
+}
+
+div.button input
+{
+	    text-align: center;
+    font-size: 30px;
+    color: #2a4836;
+    cursor: pointer;
+background:none;
+border:none;
+padding:0;
+margin:0;
+    width: 161px;
+    height: 45px;
+}
+div.button:hover 
+{
+    background: url(../images/button_hover.png) no-repeat left top;
+}
+
+div.button.button_down 
+{
+    background: url(../images/button_down.png) no-repeat left top!important;
+}
+
+div.button.button_disabled
+{
+    background: url(../images/button_disabled.png) no-repeat left top!important;
+    cursor: default;
+}
+
+div.messageBanner 
+{
+    z-index: 100;
+    position: absolute;
+    width: 798px;
+    top: 330px;
+    left: 561px;
+}
+
+div.message 
+{
+    color: White;
+    font-size: 40px;
+}
+
+div.message small 
+{
+    display: block;
+    font-size: 20px;
+}
+
+div.playButton 
+{
+    position: absolute;
+    left: 488px;
+    top: 0px;
+    background: url(../images/play.png) no-repeat left top;
+    width: 152px;
+    height: 81px;
+    cursor: pointer;
+}
+
+div.playButton:hover 
+{
+    background: url(../images/play_hi.png) no-repeat left top;
+}
+
+div.bannerLinks 
+{
+    position: absolute;
+    left: 658px;
+    top: 16px;
+    color: White;
+}
+
+div.bannerLinks a 
+{
+    text-decoration: underline;
+    font-size: 14px;
+    display: block;
+    padding: 3px 2px;
+    cursor: pointer;
+}
+
+#stats 
+{
+    position: absolute;
+    left: 720px;
+    font-size: 14px;
+    top: 58px;
+}
+
+#stats p 
+{
+    color: White;
+    margin: 0;
+}
+
+#stats p label 
+{
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+#stats a 
+{
+    display: block;
+    font-size: 12px;
+    color: White;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.scoreHistory 
+{    
+	z-index: 100;
+    top: 330px;
+    left: 561px;
+    position: absolute;
+    border: solid 8px #a2afa5;
+    background: white;
+    max-height: 434px;
+    overflow: auto;
+    z-index: 210;
+    width: 400px;
+}
+
+div.scoreHistory table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+div.scoreHistory td 
+{
+    border: solid 1px #d1d6d2;
+    padding: 1px 3px;
+    font-size: 13px;
+    
+}
+
+div.scoreHistory tr.header td 
+{
+    font-weight: bold;
+}

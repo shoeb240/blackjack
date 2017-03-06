@@ -1,0 +1,38 @@
+﻿
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Calibri, Verdana, Helvetica Narrow, Sans-Serif;
+}
+
+body
+{
+	background-color: #7a8d80;
+}
+
+div.page
+{
+	width: 862px;
+	margin: 0 auto 0 auto;
+}
+
+div.header
+{
+	position: relative;
+	width: 862px;
+	height: 138px;
+	background: url(../images/logo.jpg) no-repeat left top;
+}
+div.gametable
+{
+	background: url(../images/table.jpg) no-repeat left top;
+	position: relative;
+	width: 862px;
+	height: 487px;
+}
+p.copy
+{
+	margin: 0 0 0 14px;
+	font-size: 14px;
+}

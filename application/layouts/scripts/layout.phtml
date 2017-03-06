@@ -1,0 +1,18 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <?php echo $this->headMeta()->appendHttpEquiv('Content-Type',
+                                                  'text/html; charset=UTF-8')?>
+    <?php echo $this->headTitle()?>
+    <?php echo $this->headLink()?>
+    <?php echo $this->headScript()?>
+</head>
+<body>
+    <div id="wrapper">
+        <?php echo $this->layout()->header;?>
+        <?php echo $this->layout()->content ?>        		
+        <?php echo $this->layout()->footer;?>
+    </div><!-- END wrapper   -->
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<form action="">
+    <div class="page">
+        <div class="header">
+            <div id="stats">
+                <p>
+                    <label>
+                        Wins</label><span id="wins">0 (0%)</span></p>
+                <p>
+                    <label>
+                        Draws</label><span id="draws">0 (0%)</span></p>
+                <p>
+                    <label>
+                        Looses</label><span  id="looses">0 (0%)</span></p>
+                <a id="show_score1">Show your scores...</a>
+            </div>
+        </div>
+        <div class="gametable" id="gametable">
+            <div id="dealerContainer" class="boardRow">
+                <div id="dealer_score" class="score">
+                    ?</div>
+                <div id="dealer_card1" style="top: 34px; left: 34.9668px; display: none;" class="card">
+                </div>
+
+                <div id="dealer_card2" style="top: 34px; left: 116.366px; display: none;" class="card">
+                </div>
+
+                <div id="dealer_card3" style="top: 34px; left: 197.766px; display: none;" class="card">
+                </div>
+
+                <div id="dealer_card4" style="top: 34px; left: 279.166px; display: none;" class="card">
+                </div>
+
+                <div id="dealer_card5" style="top: 34px; left: 360.566px; display: none;" class="card">
+                </div>
+
+                <div id="dealer_card6" style="top: 34px; left: 441.966px; display: none;" class="card">
+                </div>
+
+                <div id="dealer_card7" style="top: 34px; left: 523.366px; display: none;" class="card">
+                </div>
+
+<!--                <div style="top: 34px; left: 116.366px;" class="card blank">
+                </div>-->
+            </div>
+            <div id="playerContainer" class="boardRow">
+                <div id="player_score" class="score">?</div>
+                <div id="player_card1" style="top: 34px; left: 34.9668px; display: none;" class="card">
+                </div>
+
+                <div id="player_card2" style="top: 34px; left: 116.366px; display: none;" class="card">
+                </div>
+
+                <div id="player_card3" style="top: 34px; left: 197.766px; display: none;" class="card">
+                </div>
+                
+                <div id="player_card4" style="top: 34px; left: 279.166px; display: none;" class="card">
+                </div>
+
+                <div id="player_card5" style="top: 34px; left: 360.566px; display: none;" class="card">
+                </div>
+
+                <div id="player_card6" style="top: 34px; left: 441.966px; display: none;" class="card">
+                </div>
+
+                <div id="player_card7" style="top: 34px; left: 523.366px; display: none;" class="card">
+                </div>
+
+            </div>
+            <div id="twist_div" title="Deal a new card" class="twistbutton button" style="display: none;">
+                <input id="twist" type="button" value="twist..." /></div>
+            <div id="stick_div" title="Stay with your current cards" class="stickbutton button" style="display: none;">
+                <input id="stick" type="button" value="stick!" /></div>
+            <div id="play_div" title="Deal a new card" class="twistbutton button">
+                <input id="play" type="button" value="Play" /></div>
+        </div>
+        <p class="copy">
+            © 2010 dotDigitalGroup.</p>
+    </div>
+    </form>
+    <div class="scoreHistory" style="display:none;">
+        <table id="history_table">
+            <tbody>
+                <tr class="header">
+                    <td>
+                        Game
+                    </td>
+                    <td>
+                        Player
+                    </td>
+                    <td>
+                        Dealer
+                    </td>
+                    <td>
+                        Result
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="messageBanner">
+        <div class="message">
+            Welcome to Blackjack.<small>Click 'Play' to start...</small>
+        </div>
+        <div class="playButton">
+            <input id="play2" alt="reset" type="image" src="images/play.png" class="playButton" />
+        </div>
+        <div class="bannerLinks">
+            <a id="show_score2">Show your scores...</a><a id="reset">Reset this game!</a></div>
+        </div>
+    <div id="messageBannerBox" style="position: absolute; left: 0pt; top: 323px; background-color: Black;
+        z-index: 10; width: 1920px; height: 100px; display: block;">
+    </div>
+
+<?php $this->headScript()->captureStart() ?>
+
+var baseUrl = '<?php echo $this->baseUrl('/'); ?>';
+
+<?php $this->headScript()->captureEnd() ?>
+
+<?php $this->headScript()->appendFile($this->baseUrl('scripts/play.js')) ?>
